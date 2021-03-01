@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js" integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>
+    <title>Inner Circle</title>
+</head>
+
+<body>
+    <header id="header">
+
+        <nav id="nav-bar">
+
+            <img src="./logo.jpeg" alt="IC logo" id="header-img">
+
+            <ul class="nav-links">
+                <li>
+                    <a href="#first-section" id="home-button" class="nav-link">Home</a>
+                </li>
+
+                <li>
+                    <a href="#articles" id="articles-button" class="nav-link">Articles</a>
+                </li>
+
+                <li>
+                    <a href="#learn-more" id="projects-button" class="nav-link">Projects & campaigns</a>
+                </li>
+
+            </ul>
+            <a href="javascript:void(0);" class="icon" id="bars-icon">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="row" id="first-section">
+            <section id="our-mission" class="info-section column">
+                <iframe id="video" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+
+                <div class="title">
+                    <h4>Our mission</h4>
+                    <h6>
+                        With a wide range of projects and activities such as live sessions, podcasts, digital magazines, and also training courses we will encourage youth from different interests to enroll in our events and projects.
+                    </h6>
+                    <br>
+                    <h6>
+                        <a href="#" class="learn-more">Learn more >></a>
+                    </h6>
+                </div>
+
+            </section>
+
+            <section id="about-us" class="info-section column">
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+
+                <div class='title'>
+                    <h4>About us?</h4>
+                    <h6>
+                        The inner circle is ​a media that provides an equal opportunity for youth around the world to learn the key skills they need to become fully developed in their businesses, studies, and also prepare them to lead the future.
+                    </h6>
+                    <br>
+                    <h6>
+                        <a href="#" class="learn-more" id="learn-more">Learn more >></a>
+                    </h6>
+                </div>
+
+            </section>
+        </section>
+
+        <section class="projects" id="our-projects">
+            <h2 id="projects-heading">OUR PROJECTS AND CAMPAIGNS</h2>
+
+            <section id="podcast" class="project">
+                <h2>IC Podcast</h2>
+                <img src="./Projects-logos/podcast-logo.png" alt="IC Podcast logo" id="podcast-logo" class="logo">
+                <div id="podcast-button" class="button">Listen Now</div>
+            </section>
+
+            <section id="project" class="project">
+                <h2>LA Program</h2>
+                <img src="./Projects-logos/projects1.png" alt="LA Project logo" id="project-logo" class="logo">
+                <div id="project-button" class="button">Join us</div>
+            </section>
+
+            <section id="journal" class="project">
+                <h2>IC Journal</h2>
+                <img src="./Projects-logos/journal.png" alt="IC Journal logo" id="journal-logo" class="logo">
+                <div id="journal-button" class="button">Learn more</div>
+            </section>
+        </section>
+
+        <section class="stay-connected">
+            <div class="background-picture">
+                <div class="form">
+                    <div class="upper-part">
+                        <h4 class="stay-connected-header">Stay connected</h4>
+                        <p class="stay-connected-header">Get notified for our latest events</p>
+                    </div>
+
+                    <div class="main-part">
+                        <p>By adding your email we will let you know about our latest events</p>
+                        <form action="" method="POST" id="form">
+                            <input type="text" placeholder="  FULL NAME" autocomplete="name" id="name-input">
+                            <input type="email" placeholder="  EMAIL" autocomplete="email" required id="email" name="email">
+                            <a href="https://www.freecodecamp.com/email-submit"><input type="submit" value="SEND" id="submit"></a>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="latest-articles" id="articles">
+            <h2 id="latest-articles-header">Latest <span id="yellow-part">Articles</span></h2>
+            <div id="line"></div>
+            <h6 id="articles-desc">Read our latest articles, written by young influencers</h6>
+
+            <div class="articles">
+                <article id="article1">
+                    <img src="./Pictures/success-in-days.jpg" alt="Image of a graduating student">
+                    <p>Success in 90 days</p>
+                    <p class="date"><time datetime="2021-01-09">19 Jan</time></p>
+                </article>
+
+                <article id="article2">
+                    <img src="./Pictures/best-time-management-tips.jpg" alt="picture of students">
+                    <p>Best time management tips</p>
+                    <p class="date"><time datetime="2021-01-09">19 Jan</time></p>
+                </article>
+
+                <article id="article3">
+                    <img src="./Pictures/set-smart-goals.jpg" alt="A person setting goals">
+                    <p>Set SMART goals</p>
+                    <p class="date"><time datetime="2021-01-09">19 Jan</time></p>
+                </article>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer-line"></div>
+        <div class="social-medias">
+            <a href="https://www.linkedin.com/" target="_blank" id="linked-in-link">
+                <span class="fa-stack  icon">
+                    <i class="fa fa-circle fa-stack-1x icon-background"></i>
+                    <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                </span>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UC1Y4x8DKtg8vjJMT5qzDndA" target="_blank">
+                <span class="fa-stack  icon">
+                    <i class="fa fa-circle fa-stack-1x icon-background"></i>
+                    <i class="fab fa-youtube fa-stack-1x"></i>
+                </span>
+            </a>
+
+            <a href="http://instagram.com/icmagazineofficial" target="_blank">
+                <span class="fa-stack  icon">
+                    <i class="fa fa-circle fa-stack-1x icon-background"></i>
+                    <i class="fab fa-instagram fa-stack-1x"></i>
+                </span>
+            </a>
+
+            <a href="http://t.me/icmagazinegroup" target="_blank">
+                <span class="fa-stack  icon">
+                    <i class="fa fa-circle fa-stack-1x icon-background"></i>
+                    <i class="fab fa-telegram-plane fa-stack-1x"></i>
+                </span>
+            </a>
+
+            <a href="https://twitter.com/magazine_inner?s=09" target="_blank">
+                <span class="fa-stack  icon">
+                    <i class="fa fa-circle fa-stack-1x icon-background"></i>
+                    <i class="fab fa-twitter fa-stack-1x"></i>
+                </span>
+            </a>
+        </div>
+        <h3 id="footer-heading">
+            INNER CIRCLE
+        </h3>
+    </footer>
+
+    <script src="./script.js" defer></script>
+
+</body>
+
+</html>
