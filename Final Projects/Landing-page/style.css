@@ -1,0 +1,537 @@
+:root {
+    --yellow-color: #F6D804;
+    --blue-color: #004AAD;
+    --gray-color: #666666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lucida sans unicode, lucida grande, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+header,
+main {
+    background-color: white;
+}
+
+
+/* HEADER*/
+
+header {
+    margin-bottom: 5em;
+}
+
+h2 {
+    font-size: 2.1875rem;
+    text-align: center;
+    padding-bottom: 1.25em;
+}
+
+#header {
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+}
+
+#header-img {
+    border-radius: 120em;
+    width: 5em;
+    height: 4.5em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F3F3F3;
+}
+
+.nav-links li {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li a {
+    font-size: 1rem;
+    padding: 1.5em 3em;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+    background-color: #F3F3F3;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: white;
+    background-color: black;
+}
+
+#home-button {
+    background-color: var(--yellow-color);
+}
+
+#home-button:hover {
+    color: white;
+    background-color: black;
+}
+
+.button {
+    background-color: var(--yellow-color);
+    width: 10em;
+    padding: 0.55em 0;
+    margin: 0.4em 0;
+    border-radius: 50px;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+}
+
+.button:hover {
+    color: white;
+    background-color: black;
+}
+
+.fa-bars {
+    color: black;
+    margin-top: 1.5em;
+    display: none;
+}
+
+
+/* FIRST SECTION */
+
+#our-mission iframe,
+#about-us iframe {
+    text-align: center;
+    margin: 0 auto;
+    width: 25.4375em;
+    height: 14.875em;
+}
+
+.title {
+    width: 28em;
+    margin: 2em auto;
+}
+
+.row {
+    padding-top: 10em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+h4 {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+h6 {
+    text-align: center;
+    font-size: 0.875em;
+}
+
+.learn-more {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: all 0.3s ease 0s;
+}
+
+.learn-more:hover {
+    color: var(--yellow-color);
+    -webkit-text-stroke: 0.5px black;
+    font-size: 1.15em;
+    padding-bottom: 2em;
+}
+
+
+/* SECOND-SECTION */
+
+.project {
+    float: left;
+    width: 33.33333333333333%;
+    padding-bottom: 3.75em;
+    display: block;
+}
+
+.projects {
+    display: block;
+    position: relative;
+    padding-bottom: 18.75em;
+}
+
+#projects-heading {
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+}
+
+.project h2 {
+    text-align: center;
+    font-size: 1.625rem;
+    font-weight: bold;
+}
+
+.logo {
+    display: inline-block;
+    border: none;
+    border-radius: 100px;
+    width: 113px;
+    height: 111px;
+    margin: auto;
+    display: block;
+}
+
+#podcast-button,
+#project-button,
+#journal-button {
+    margin: auto;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    #our-mission iframe,
+    #about-us iframe {
+        width: 100vw !important;
+        margin-left: 0 !important;
+    }
+    .title {
+        width: 100vw;
+        word-wrap: break-word
+    }
+    .articles article {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .fa-bars {
+        display: inline;
+        margin-right: 3em;
+    }
+    .nav-links {
+        display: none;
+    }
+    #nav-bar {
+        justify-content: space-between;
+    }
+    #header-img {
+        margin-left: 3em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project {
+        width: 100%;
+        z-index: 100000;
+    }
+    .background-picture {
+        margin-top: 40em
+    }
+    .form {
+        width: 100% !important;
+        margin: 8% 0px !important;
+    }
+    #name-input,
+    #email,
+    #submit {
+        margin-top: 2em !important;
+    }
+    #our-mission iframe,
+    #about-us iframe {
+        width: 100vw !important;
+        margin-left: 0 !important;
+    }
+    .title {
+        width: 100vw;
+    }
+}
+
+.vertical-link-ul {
+    display: block !important;
+    position: fixed;
+    right: 0;
+    margin-top: 4.5em;
+}
+
+.vertical-link {
+    float: inherit;
+    display: block;
+    text-align: center;
+    line-height: 0.1em;
+    width: 100vw
+}
+
+@media screen and (max-width: 1025px) {
+    .articles article {
+        width: 100% !important;
+        text-align: center !important;
+        margin-bottom: 2em !important;
+    }
+    .articles article p {
+        text-align: center !important;
+    }
+    .footer-line {
+        margin: 60em auto 0 auto!important;
+    }
+}
+
+
+/* THIRD SECTION*/
+
+.stay-connected {
+    display: block;
+    padding-top: 4.375em;
+    margin-top: -1.875em;
+}
+
+.background-picture {
+    background-image: url("../Pictures/graduating-students.jpg");
+    height: 45em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+.form {
+    display: block;
+    position: absolute;
+    width: 40%;
+    margin: 8% 30%;
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
+}
+
+.border,
+.upper-part {
+    border-radius: 10px 10px 0 0;
+    background-color: var(--yellow-color);
+}
+
+.stay-connected-header {
+    background-color: var(--yellow-color);
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.upper-part h4 {
+    border: none;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    padding-top: 1.25em;
+    background-color: var(--yellow-color);
+}
+
+.upper-part p {
+    padding-bottom: 1.25em;
+}
+
+.main-part {
+    background-color: white;
+}
+
+.main-part p {
+    margin: 2.5em 3.125em;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#name-input,
+#email,
+#submit {
+    border-width: 1px;
+    border-radius: 0;
+    width: 90%;
+    height: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 1.2em;
+}
+
+#submit {
+    height: 46px;
+    width: 90%;
+    margin: 2.5em auto;
+    background-color: black;
+    color: white;
+    transition: all 0.4s ease 0s;
+}
+
+#submit:hover {
+    background-color: var(--yellow-color);
+    color: black;
+    border: none;
+}
+
+
+/*FOURTH SECTION*/
+
+#latest-articles-header {
+    margin-top: 2.5em;
+    font-weight: 900
+}
+
+#yellow-part {
+    -webkit-text-stroke: 1.2px black;
+    color: #F6D804
+}
+
+#line {
+    width: 75px;
+    height: 3px;
+    background-color: rgb(102, 102, 102);
+    margin: auto
+}
+
+#articles-desc {
+    color: rgb(102, 102, 102);
+    margin-top: 1em;
+    margin-bottom: 3.5em;
+}
+
+.articles {
+    margin-bottom: 22em;
+}
+
+.articles article {
+    float: left;
+    width: 33.33333333333333%;
+    padding: 0 5%;
+}
+
+.articles article img {
+    width: 22.4375em;
+    height: 12.75em;
+    margin: auto;
+}
+
+.articles article p {
+    text-align: justify;
+}
+
+.date {
+    color: black;
+    font-size: 0.75rem;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: unset;
+}
+
+.footer-line {
+    width: 92%;
+    margin: auto;
+    height: 1px;
+    background-color: var(--gray-color)
+}
+
+.footer {
+    font-family: "Font Awesome 5 Brands";
+}
+
+.icon-background {
+    color: var(--yellow-color);
+}
+
+.fa-linkedin-in {
+    color: var(--gray-color);
+    transition: all 0.3s ease 0s;
+}
+
+.fa-linkedin-in:hover {
+    font-size: 2em;
+}
+
+.fa-youtube {
+    color: var(--gray-color);
+    transition: all 0.3s ease 0s;
+}
+
+.fa-youtube:hover {
+    font-size: 2em;
+}
+
+.fa-instagram {
+    color: var(--gray-color);
+    transition: all 0.3s ease 0s;
+}
+
+.fa-instagram:hover {
+    font-size: 2em;
+}
+
+.fa-telegram-plane {
+    color: var(--gray-color);
+    transition: all 0.3s ease 0s;
+}
+
+.fa-telegram-plane:hover {
+    font-size: 2em;
+}
+
+.fa-twitter {
+    color: var(--gray-color);
+    transition: all 0.3s ease 0s;
+    padding-left: 3px;
+}
+
+.fa-twitter:hover {
+    font-size: 2em;
+}
+
+.social-medias {
+    margin: 1.5em 0 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.fa-circle {
+    font-size: 2em;
+}
+
+#footer-heading {
+    text-align: center;
+    margin-bottom: 1em;
+    color: var(--gray-color)
+}
