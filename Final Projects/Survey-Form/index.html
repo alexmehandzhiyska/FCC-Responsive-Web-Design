@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    <script src="script.js" defer></script>
+    <title>Form</title>
+</head>
+
+<body>
+    <h1 id="title">Sign Up</h1>
+    <p id="description">
+        Thank you for taking the time to fill in this survey!
+    </p>
+    <form id="survey-form">
+
+        <label for="name" id="name-label">Name</label>
+        <input type="name" id="name" class="input" placeholder="Enter your name here" required>
+
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" class="input" placeholder="Enter your email here" required>
+
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" min="18" max="100" class="input" placeholder="Enter your age here (18+)" required>
+
+        <label for="dropdown" id="education">Education</label>
+        <select name="dropdown" id="dropdown" class="input" required>
+            <option value="">--Please choose an option--</option>
+            <option value="High School">High school</option>
+            <option value="College / University">College / University</option>
+        </select>
+
+        <p>Gender:</p>
+        <span class="gender">
+            <label for="male"><span class="option">Male</span></label>
+        <input type="radio" name="gender" id="male" value="male" required>
+        </span>
+
+        <span class="gender">
+            <label for="female"><span class="option">Female</span></label>
+        <input type="radio" name="gender" id="female" value="female">
+        </span>
+
+
+        <p>Extracurriculars</p>
+        <span class="activity">
+            <label for="singing"><span class="option">Singing</span></label>
+        <input type="checkbox" id="singing" name="singing" value="Singing">
+        </span>
+
+        <span class="activity">
+            <label for="dancing"> <span class="option">Dancing</span></label>
+        <input type="checkbox" id="dancing" name="dancing" value="Dancing">
+        </span>
+
+        <span class="activity">
+            <label for="arts"> <span class="option">Arts</span> </label>
+        <input type="checkbox" id="arts" name="arts" value="Arts">
+        </span>
+
+        <span class="activity">
+            <label for="sports"> <span class="option">Sports</span> </label>
+        <input type="checkbox" id="sports" name="sports" value="Sports">
+        </span>
+
+        <span class="activity">
+            <label for="speedcubing"> <span class="option">Speedcubing</span> </label>
+        <input type="checkbox" id="speedcubing" name="speedcubing" value="Speedcubing">
+        </span>
+
+        <span class="activity">
+            <label for="leadership"> <span class="option">Leadership</span> </label>
+        <input type="checkbox" id="leadership" name="leadership" value="Leadership">
+        </span>
+
+        <span class="activity">
+            <label for="volunteering"> <span class="option">Volunteering</span> </label>
+        <input type="checkbox" id="volunteering" name="volunteering" value="Volunteering">
+        </span>
+
+        <p>Message</p>
+        <textarea name="others" id="other-extracurriculars" class="input" cols="50" rows="100" placeholder="Leave your message here..."></textarea>
+
+        <input type="submit" value="submit" id="submit">
+    </form>
+</body>
+
+</html>
