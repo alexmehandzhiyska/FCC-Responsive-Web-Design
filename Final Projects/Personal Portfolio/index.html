@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <title>Alexandrina Mehandzhiyska</title>
+    <style>
+        body {
+            background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+        }
+        
+        #welcome-section {
+            height: 50em;
+        }
+        
+        #welcome-section h1 {
+            padding-top: 5em;
+            font-size: 4rem
+        }
+        
+        #welcome-section h3 {
+            padding-top: 2rem;
+            font-size: 2rem;
+        }
+        
+        .card {
+            margin: 3em auto;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+            transition: ease 0.2s 0s;
+            font-weight: 600;
+        }
+        
+        .card-link:hover {
+            color: #1DB9DE
+        }
+        
+        p {
+            font-size: 1.25rem;
+        }
+        
+        .nav {
+            background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+            border: #1DB9DE 5px solid;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000
+        }
+        
+        .nav-link {
+            font-size: 1.25rem;
+            transition: ease 0.2s 0s;
+        }
+        
+        .nav-link:hover {
+            font-size: 1.4rem;
+            color: black
+        }
+        
+        #github {
+            margin-top: 11em
+        }
+        
+        #github-logo {
+            width: 10em
+        }
+        
+        .github-link:hover {
+            font-size: 1.25em;
+            color: black;
+        }
+        
+        @media (min-width: 576px) {
+            .col-sm-6 {
+                flex: 0 0 auto;
+                width: 100%;
+            }
+        }
+        
+        @media (min-width: 800px) {
+            .col-sm-6 {
+                flex: 0 0 auto;
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner-fluid">
+        <header>
+            <ul class="nav justify-content-center" id="navbar">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#welcome-section">Welcome</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#github">Link</a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <section id="welcome-section">
+                <h1 class="text-center">Alexandrina Mehandzhiyska</h1>
+                <h3 class="text-center">Web developer</h3>
+            </section>
+            <section id="projects">
+                <h1 class="text-center">My Projects</h1>
+                <div class="row">
+                    <div class="col-sm-6 project">
+                        <div class="card project-tile" style="width: 25rem;">
+                            <img src="./form-page.png" class="card-img-top" alt="Project image">
+                            <div class="card-body">
+                                <p class="card-text text-center"><a class="card-link" href="https://codepen.io/alexmehandzhiyska/pen/PobOrwB" target="_blank">Form page</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                        <div class="card project-tile" style="width: 25rem;">
+                            <img src="./product-page.png" class="card-img-top" alt="Project image">
+                            <div class="card-body">
+                                <p class="card-text text-center">
+                                    <a href="https://codepen.io/alexmehandzhiyska/pen/dyOZxGw" class="card-link" target="_blank">Product page</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section id="github">
+                <a href="https://github.com/alexmehandzhiyska" target="_blank"><img id="github-logo" class="mx-auto d-block" src="./github-logo.png" alt="Github logo"></a>
+                <h3 class="text-center my-3">
+                    <a href="https://github.com/alexmehandzhiyska" id="profile-link" target="_blank" class="github-link">Github account</a>
+                </h3>
+            </section>
+
+        </main>
+        </div>
+</body>
+
+</html>
